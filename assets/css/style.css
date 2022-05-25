@@ -1,0 +1,57 @@
+html, body {
+    margin: 0px;
+    padding: 0%;
+}
+
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+    /* grid-template-columns: .5fr 2fr 2fr ;  --> Grid template con 3 columnas*/
+    grid-template-columns: 15% auto auto;
+    grid-template-rows: 1fr 80% 1fr;
+    height: 100vh; /* --> con este height en el padre, le digo al programa que complete el 100% de la pagina */
+
+    
+}
+
+.header {
+    background-color: aqua;
+    grid-area: header;
+    
+}
+
+.main {
+    background-color: bisque;
+    grid-area: main;
+    
+
+}
+
+
+.footer {
+    background-color: violet;
+    grid-area: footer;
+    
+}
+
+.sidebar {
+    background-color: green;
+    grid-area: sidebar;
+    
+}
+
+/*
+.grid-item {
+    border: solid 1px black;
+}
+
+.grid-item img {
+    height: auto%;
+    width: 100%;
+}
+
+*/
