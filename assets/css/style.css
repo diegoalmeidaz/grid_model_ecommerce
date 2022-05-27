@@ -15,6 +15,7 @@ html, body {
     grid-template-rows: 1fr 95% 1fr;
      /* --> con este height en el padre, le digo al programa que complete el 100% de la pagina */
     font-family: Arial, Helvetica, sans-serif;    
+    
 }
 
 /* URL ejemplo navbar stackoverflow: https://stackoverflow.com/questions/67154896/creating-navbar-with-css-grid */
@@ -43,7 +44,7 @@ html, body {
     
     grid-area: logo;
     grid-column: -3;
-    margin-left: 8px;
+    margin-left: 2px;
    
 }
 
@@ -70,7 +71,7 @@ html, body {
     
     
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 
     
@@ -128,7 +129,7 @@ a {
     display: flex;
     flex: wrap;
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-end;
     margin: 12px;
     border: 1px solid black;
     border-radius: 8px;
@@ -155,7 +156,9 @@ a {
     color: red;
     padding: 10px;
     width: 100%;
-    font-style: bold;
+    font-weight: bold;
+    cursor: pointer;
+
     
     
 }
@@ -169,6 +172,27 @@ a {
 .tarjeta:nth-child(1) {
     width: 525px;
   }
+
+.menu_lateral {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.sidebar ul {
+      list-style: none;
+      
+}
+
+
+.sidebar h5 {
+    font-size: large;
+    margin-left: 5px;
+}
 
 
 @media only screen and (max-width: 600px)
